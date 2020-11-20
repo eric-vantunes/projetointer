@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+* {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.menu{
+    background-color: #5F5F5F;
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+
+.menu a{
+    float: left;
+    color: #F1F1F1;
+    padding: 14px;
+    font-size: 17px;
+    text-decoration: none;
+}
+
+.menu a:hover {
+    background-color: #DDDDDD;
+    color: black;
+}
+
+.menu a.ativo {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.form{
+    background-color: #0B6FA4;
+    color: #F1F1F1;
+}
+
+.form-group{
+    display: flex;
+    flex-direction: row;
+}
+
+.form-group label {
+    width: 125px;
+    font-weight: bold;
+    font-size: 16px;
+}
+.form-group label.right-inline{
+    text-align: right;
+    padding-right: 10px;
+    padding-left: 10px;
+    width: auto;
+}
+.form-group .input-control{
+    flex: 1 1 auto;
+    display: block;
+    margin-bottom: 10px;
+    margin-right: 8px;
+    padding: 5px;
+}
+
+button{
+    background-color: #98CAE6;
+    color: #0B6FA4;
+    font-size: 15px;
+    padding: 5px;
+    margin: 5px;
+    min-width: 100px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+table.paleBlueRows {
+    border: 1px solid #FFFFFF;
+    width: 100%;
+    height: 80px;
+    text-align: center;
+    border-collapse: collapse;
+  }
+  table.paleBlueRows td, table.paleBlueRows th {
+    border: 1px solid #FFFFFF;
+    padding: 3px 2px;
+  }
+  table.paleBlueRows tbody td {
+    font-size: 13px;
+  }
+  table.paleBlueRows tr:nth-child(even) {
+    background: #D0E4F5;
+  }
+  table.paleBlueRows thead {
+    background: #0B6FA4;
+    border-bottom: 5px solid #FFFFFF;
+  }
+  table.paleBlueRows thead th {
+    font-size: 17px;
+    font-weight: bold;
+    color: #FFFFFF;
+    text-align: center;
+    border-left: 2px solid #FFFFFF;
+  }
+  table.paleBlueRows thead th:first-child {
+    border-left: none;
+  }
+  
+  table.paleBlueRows tfoot {
+    font-size: 14px;
+    font-weight: bold;
+    color: #333333;
+    background: #D0E4F5;
+    border-top: 3px solid #444444;
+  }
+  table.paleBlueRows tfoot td {
+    font-size: 14px;
+  }
+
+  @media (max-width: 768px) {
+      .form-group {
+          flex-direction: column;
+      }
+
+      .form-group label.right-inline {
+          text-align: left;
+          padding-right: 0;
+          padding-left: 0;
+        }
+  }
